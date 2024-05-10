@@ -4,7 +4,7 @@ let connectDb = function (dbName) {
   return mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "root",
+    password: process.env.password,
     database: dbName,
   });
 };

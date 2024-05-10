@@ -1,9 +1,10 @@
+require("dotenv").config();
 const express = require("express");
 const connectDb = require("./db/connectDb");
 const emplyeeRouter = require("./routes/employee");
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());

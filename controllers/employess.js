@@ -1,5 +1,5 @@
 const connectDb = require("../db/connectDb");
-
+// This file uses default connection.query() method
 let connection;
 
 (async () => {
